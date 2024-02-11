@@ -13,7 +13,38 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Please provide a description of your project"
+    message: "Provide a description of your project"
+  },
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'Provide installation guidelines'
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'Provide usage guidelines'
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license',
+    choices: ['MIT', 'Apache 2.0', 'GPL v3', 'AGPL v3', 'MPL 2.0', 'Boost 1.0']
+  },
+  {
+    type: 'input',
+    name: 'contributing',
+    message: 'Provide contributing guidlines',
+  },
+  {
+    type: 'input',
+    name: 'tests',
+    message: 'Provide test guidelines',
+  },
+  {
+    type: 'input',
+    name: 'questions',
+    message: 'Provide contact details',
   },
 ];
 
