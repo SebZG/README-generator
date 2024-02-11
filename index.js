@@ -11,51 +11,51 @@ const questions = [
     message: "What is the title of your project?"
   },
   {
-    type: "input",
-    name: "description",
-    message: "Provide a description of your project"
-  },
-  {
-    type: 'input',
-    name: 'installation',
-    message: 'Provide installation guidelines'
-  },
-  {
-    type: 'input',
-    name: 'usage',
-    message: 'Provide usage guidelines'
-  },
-  {
     type: 'list',
     name: 'license',
-    message: 'Choose a license',
+    message: 'Choose a license:',
     choices: ['MIT', 'Apache 2.0', 'GPL v3', 'AGPL v3', 'MPL 2.0', 'Boost 1.0', 'none']
   },
   {
-    type: 'input',
-    name: 'contributing',
-    message: 'Provide contributing guidlines',
+    type: "editor",
+    name: "description",
+    message: "Add description of your project:"
   },
   {
-    type: 'input',
+    type: 'editor',
+    name: 'installation',
+    message: 'Add installation guidelines:'
+  },
+  {
+    type: 'editor',
+    name: 'usage',
+    message: 'Add usage guidelines:'
+  },
+  {
+    type: 'editor',
+    name: 'contributing',
+    message: 'Add contributing guidlines:',
+  },
+  {
+    type: 'editor',
     name: 'tests',
-    message: 'Provide test guidelines',
+    message: 'Add test guidelines:',
   },
   {
     type: 'input',
     name: 'github',
-    message: 'Provide GitHub username',
+    message: 'Add GitHub username:',
   },
   {
     type: 'input',
     name: 'email',
-    message: 'Provide E-Mail',
+    message: 'Add E-Mail:',
   },
 ];
 
 // Function to write README file
 function writeToFile(fileName, data) {
-  const filePath = path.resolve("./demos", fileName); // Construct the file path here
+  const filePath = path.resolve("./demos", fileName); // Edit file path here
   fs.writeFile(filePath, data, err => {
     if (err) {
       throw err;

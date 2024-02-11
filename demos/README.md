@@ -1,45 +1,53 @@
 
-  # Demo Project
+# Demo Test
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  ## Description
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Description
 This is a demo
 
-  
-  ## Table of Contents
-  - [Description](#description)
 
-  - [Installation](#installation)
+## Table of Contents
+- [Description](#description)
 
-  - [Usage](#usage)
+- [Installation](#installation)
 
-  - [License](#license)
+- [Usage](#usage)
 
-  - [Contributing](#contributing)
+- [License](#license)
 
-  - [Tests](#tests)
+- [Contributing](#contributing)
 
-  - [Questions](#questions)
+- [Tests](#tests)
 
-  
-  ## Installation
-some installation steps
+- [Questions](#questions)
 
-  ## Usage
-some usage guidelines
 
-  ## License
+## Installation
+How to install
+
+## Usage
+Some usage guidlines
+
+- some points
+- seconds points
+  - nested points
+
+## License
 This application is covered under the MIT License.
 
-  ## Contributing
-constributions
+## Contributing
+How to contribute
 
-  ## Tests
-some test steps
+## Tests
+Test guidelines
 
-  ## Questions
+- step one
+- step two
+- step three
 
-  visit my [GitHub](https://github.com/SebZG) profile
+## Questions
 
-  Feel free to [E-Mail](mailto:sebastian.zapata.g@gmail.com) me
+Visit my [GitHub](https://github.com/SebZG) profile
+
+Feel free to [E-Mail](mailto:sebastian.zapata.g@gmail.com) me
 

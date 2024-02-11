@@ -34,44 +34,49 @@ export function generateMarkdown(data) {
     return { badge: licenseBadge, notice: licenseNotice }
   }
 
-  let titleSection = title ? `# ${title}\n` : "";
-  let descriptionSection = description ? `## Description\n${description}\n` : "";
-  let installationSection = installation ? `## Installation\n${installation}\n` : "";
-  let usageSection = usage ? `## Usage\n${usage}\n` : "";
-  let { badge: licenseBadge, notice: licenseNotice } = setLicense(license);
-  let licenseSection = licenseBadge ? `## License\n${licenseNotice}\n` : "";
-  let contributingSection = contributing ? `## Contributing\n${contributing}\n` : "";
-  let testsSection = tests ? `## Tests\n${tests}\n` : "";
-  let gitHub = github ? `Visit my [GitHub](https://github.com/${github}) profile\n` : "";
-  let eMail = email ? `Feel free to [E-Mail](mailto:${email}) me\n` : "";
+  const titleSection = title ? `# ${title}\n` : "";
+  const descriptionSection = description ? `## Description\n${description}\n` : "";
+  const installationSection = installation ? `## Installation\n${installation}\n` : "";
+  const usageSection = usage ? `## Usage\n${usage}\n` : "";
+  const { badge: licenseBadge, notice: licenseNotice } = setLicense(license);
+  const licenseSection = licenseBadge ? `## License\n${licenseNotice}\n` : "";
+  const contributingSection = contributing ? `## Contributing\n${contributing}\n` : "";
+  const testsSection = tests ? `## Tests\n${tests}\n` : "";
+  const gitHub = github ? `Visit my [GitHub](https://github.com/${github}) profile\n` : "";
+  const eMail = email ? `Feel free to [E-Mail](mailto:${email}) me\n` : "";
+
+  const setTableOfContents = () => {
+    return descriptionSection
+      || installationSection
+      || usageSection
+      || licenseSection
+      || contributingSection
+      || testsSection
+      || gitHub
+      || eMail ? '## Table of Contents' : ""
+  }
 
   return `
-  ${titleSection}
-  ${licenseBadge}
-  ${descriptionSection}
-  
-  ${descriptionSection ||
-      installationSection ||
-      usageSection ||
-      licenseSection ||
-      contributingSection ||
-      testsSection ||
-      questionsSection ? '## Table of Contents' : ""}
-  ${descriptionSection ? '- [Description](#description)\n' : ''}
-  ${installationSection ? '- [Installation](#installation)\n' : ''}
-  ${usageSection ? '- [Usage](#usage)\n' : ''}
-  ${licenseSection ? '- [License](#license)\n' : ''}
-  ${contributingSection ? '- [Contributing](#contributing)\n' : ''}
-  ${testsSection ? '- [Tests](#tests)\n' : ''}
-  ${gitHub || eMail ? '- [Questions](#questions)\n' : ''}
-  
-  ${installationSection}
-  ${usageSection}
-  ${licenseSection}
-  ${contributingSection}
-  ${testsSection}
-  ${gitHub || eMail ? '## Questions\n' : ""}
-  ${gitHub}
-  ${eMail}
+${titleSection}
+${licenseBadge}
+${descriptionSection}
+
+${setTableOfContents()}
+${descriptionSection ? '- [Description](#description)\n' : ''}
+${installationSection ? '- [Installation](#installation)\n' : ''}
+${usageSection ? '- [Usage](#usage)\n' : ''}
+${licenseSection ? '- [License](#license)\n' : ''}
+${contributingSection ? '- [Contributing](#contributing)\n' : ''}
+${testsSection ? '- [Tests](#tests)\n' : ''}
+${gitHub || eMail ? '- [Questions](#questions)\n' : ''}
+
+${installationSection}
+${usageSection}
+${licenseSection}
+${contributingSection}
+${testsSection}
+${gitHub || eMail ? '## Questions\n' : ""}
+${gitHub}
+${eMail}
 `;
 }
