@@ -1,9 +1,9 @@
 
-# Demo Test
+# Demo Project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-This is a demo
+This is a description of demo project
 
 
 ## Table of Contents
@@ -23,27 +23,34 @@ This is a demo
 
 
 ## Installation
-How to install
-
-## Usage
-Some usage guidlines
+These are some installation guides.
 
 - some points
-- seconds points
+- a second point
   - nested points
+  - another point here
+
+## Usage
+How to use App guide.
+
+- step 1
+- step 2
+- step 3
 
 ## License
 This application is covered under the MIT License.
 
 ## Contributing
-How to contribute
+For constribution see [Qestions Section](#questions).
 
 ## Tests
-Test guidelines
+How to test.
 
-- step one
-- step two
-- step three
+- steps
+  - more steps
+- steps
+  - another step
+    - more steps
 
 ## Questions
 

@@ -1,6 +1,6 @@
 // function to generate markdown for README
 export function generateMarkdown(data) {
-  const { title, description, installation, usage, license, contributing, tests, github, email } = data;
+  const { title, description, installation, usage, license, contribution, tests, github, email } = data;
 
   const setLicense = (license) => {
     let licenseBadge = '';
@@ -40,7 +40,7 @@ export function generateMarkdown(data) {
   const usageSection = usage ? `## Usage\n${usage}\n` : "";
   const { badge: licenseBadge, notice: licenseNotice } = setLicense(license);
   const licenseSection = licenseBadge ? `## License\n${licenseNotice}\n` : "";
-  const contributingSection = contributing ? `## Contributing\n${contributing}\n` : "";
+  const contributingSection = contribution ? `## Contributing\n${contribution}\n` : "";
   const testsSection = tests ? `## Tests\n${tests}\n` : "";
   const gitHub = github ? `Visit my [GitHub](https://github.com/${github}) profile\n` : "";
   const eMail = email ? `Feel free to [E-Mail](mailto:${email}) me\n` : "";
