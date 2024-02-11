@@ -1,6 +1,6 @@
 // function to generate markdown for README
 export function generateMarkdown(data) {
-  const { title, description, installation, usage, license, contributing, tests, questions } = data;
+  const { title, description, installation, usage, license, contributing, tests, github, email } = data;
 
   const setLicense = (license) => {
     let licenseBadge = '';
@@ -42,7 +42,8 @@ export function generateMarkdown(data) {
   let licenseSection = licenseBadge ? `## License\n${licenseNotice}\n` : "";
   let contributingSection = contributing ? `## Contributing\n${contributing}\n` : "";
   let testsSection = tests ? `## Tests\n${tests}\n` : "";
-  let questionsSection = questions ? `## Questions\n${questions}\n` : "";
+  let gitHub = github ? `Visit my [GitHub](https://github.com/${github}) profile\n` : "";
+  let eMail = email ? `Feel free to [E-Mail](mailto:${email}) me\n` : "";
 
   return `
   ${titleSection}
@@ -62,13 +63,15 @@ export function generateMarkdown(data) {
   ${licenseSection ? '- [License](#license)\n' : ''}
   ${contributingSection ? '- [Contributing](#contributing)\n' : ''}
   ${testsSection ? '- [Tests](#tests)\n' : ''}
-  ${questionsSection ? '- [Questions](#questions)\n' : ''}
+  ${gitHub || eMail ? '- [Questions](#questions)\n' : ''}
   
   ${installationSection}
   ${usageSection}
   ${licenseSection}
   ${contributingSection}
   ${testsSection}
-  ${questionsSection}
+  ${gitHub || eMail ? '## Questions\n' : ""}
+  ${gitHub}
+  ${eMail}
 `;
 }
