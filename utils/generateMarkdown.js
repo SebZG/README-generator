@@ -48,14 +48,21 @@ export function generateMarkdown(data) {
   ${titleSection}
   ${licenseBadge}
   ${descriptionSection}
-  ## Table of Contents
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
+  
+  ${descriptionSection ||
+      installationSection ||
+      usageSection ||
+      licenseSection ||
+      contributingSection ||
+      testsSection ||
+      questionsSection ? '## Table of Contents' : ""}
+  ${descriptionSection ? '- [Description](#description)\n' : ''}
+  ${installationSection ? '- [Installation](#installation)\n' : ''}
+  ${usageSection ? '- [Usage](#usage)\n' : ''}
+  ${licenseSection ? '- [License](#license)\n' : ''}
+  ${contributingSection ? '- [Contributing](#contributing)\n' : ''}
+  ${testsSection ? '- [Tests](#tests)\n' : ''}
+  ${questionsSection ? '- [Questions](#questions)\n' : ''}
   
   ${installationSection}
   ${usageSection}
