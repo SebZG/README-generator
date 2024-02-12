@@ -1,60 +1,54 @@
-
 # Demo Project
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Description
-This is a description of demo project
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+## Description
+
+This is a description
 
 ## Table of Contents
-- [Description](#description)
 
-- [Installation](#installation)
-
-- [Usage](#usage)
-
-- [License](#license)
-
-- [Contributing](#contributing)
-
-- [Tests](#tests)
-
-- [Questions](#questions)
-
+- [Demo Project](#demo-project)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
 ## Installation
-These are some installation guides.
 
-- some points
-- a second point
-  - nested points
-  - another point here
+To install follow steps:
+
+- Step 1
+  - some instructions
+- Step 2
+  - some next steps
+  - some notes
 
 ## Usage
-How to use App guide.
 
-- step 1
-- step 2
-- step 3
+Some use guidelines
+
+- Steps
+  - instructions
 
 ## License
-This application is covered under the MIT License.
+
+This application is covered under the GNU GPL v3 License.
 
 ## Contributing
-For constribution see [Qestions Section](#questions).
+
+For constributions please contact me on [GitHub](https://github.com/SebZG)
 
 ## Tests
-How to test.
 
-- steps
-  - more steps
-- steps
-  - another step
-    - more steps
+test instructions
 
 ## Questions
 
 Visit my [GitHub](https://github.com/SebZG) profile
 
 Feel free to [E-Mail](mailto:sebastian.zapata.g@gmail.com) me
-
