@@ -11,6 +11,7 @@ export const generateMarkdown = (data) => {
   const licenseSection = licenseBadge ? `## License\n${licenseNotice}\n` : "";
   const contributingSection = contribution ? `## Contributing\n${contribution}\n` : "";
   const testsSection = tests ? `## Tests\n${tests}\n` : "";
+  const questionsSection = github || email ? '## Questions\n' : ""
   const gitHub = github ? `Visit my [GitHub](https://github.com/${github}) profile\n` : "";
   const eMail = email ? `Feel free to [E-Mail](mailto:${email}) me\n` : "";
 
@@ -44,7 +45,7 @@ ${usageSection}
 ${licenseSection}
 ${contributingSection}
 ${testsSection}
-${gitHub || eMail ? '## Questions\n' : ""}
+${questionsSection}
 ${gitHub}
 ${eMail}
 `;
