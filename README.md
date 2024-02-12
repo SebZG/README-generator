@@ -54,7 +54,7 @@ For best experience, use external terminal from IDE
 - Step 3
   - Answer pompts - Some will open default text editor.
   - When inputting from text editor, SAVE file and close to continue.
-  - You MUST SAVE before closing or input will not register.
+  - If you do not save, your input will NOT be registered and will be prompted to provide input again.
 - Step 4
   - When all prompts are answered a `README.md` will be generated and saved to the `./generated-readme` folder.
 
