@@ -126,5 +126,9 @@ export const questions = [
     when(answers) {
       return answers.includeEmail === true;
     },
-  },
+    validate(input) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(input) ? true : 'Please enter a valid email address';
+    },
+  }
 ];
