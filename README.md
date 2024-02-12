@@ -15,7 +15,6 @@ A command-line application that allows you to quickly create a professional `REA
     - [Steps](#steps)
   - [Usage](#usage)
     - [Steps](#steps-1)
-    - [Other Notes](#other-notes)
   - [Technologies/Languages](#technologieslanguages)
   - [Images](#images)
   - [License](#license)
@@ -57,10 +56,6 @@ For best experience, use external terminal from IDE
   - If you do not save, your input will NOT be registered and will be prompted to provide input again.
 - Step 4
   - When all prompts are answered a `README.md` will be generated and saved to the `./generated-readme` folder.
-
-### Other Notes
-
-If you need to change the save path or name of file you may do so in the `index.js` file.
 
 ## Technologies/Languages
 
