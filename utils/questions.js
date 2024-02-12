@@ -112,6 +112,10 @@ export const questions = [
     when(answers) {
       return answers.includeGithub === true;
     },
+    validate(input) {
+      const githubUsernameRegex = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
+      return githubUsernameRegex.test(input) ? true : 'Please enter a valid GitHub username';
+    },
   },
   {
     type: "confirm",
