@@ -15,7 +15,7 @@ A command-line application that allows you to quickly create a professional `REA
     - [Steps](#steps)
   - [Usage](#usage)
     - [Steps](#steps-1)
-    - [Other notes](#other-notes)
+    - [Other Notes](#other-notes)
   - [Technologies/Languages](#technologieslanguages)
   - [Images](#images)
   - [License](#license)
@@ -24,7 +24,7 @@ A command-line application that allows you to quickly create a professional `REA
 
 ## Installation
 
-To install/use README Generator and it's dependecies, you will first need to have [Node.JS](https://nodejs.org/) installed on your machine.
+To install/use `README Generator` and it's dependecies, you will first need to have [Node.JS](https://nodejs.org/) installed on your machine.
 
 Once you hav you have Node.js installed continue with the following steps:
 
@@ -33,7 +33,7 @@ Once you hav you have Node.js installed continue with the following steps:
 - Step 1
   - Clone/Fork [Repo](https://github.com/SebZG/README-generator) on to local machine.
 - Step 2
-  - Open terminal from root of Repo and install dependencies with the following commands:
+  - Open terminal from root of `README-generator` Repo and install dependencies with the following commands:
   ```bash
   npm install
   ```
@@ -45,7 +45,7 @@ For best experience, use external terminal from IDE
 ### Steps
 
 - Step 1
-  - Open terminal from root of README-generator Repo.
+  - Open terminal from root of `README-generator` Repo.
 - Step 2
   - run the command:
   ```bash
@@ -58,7 +58,7 @@ For best experience, use external terminal from IDE
 - Step 4
   - When all prompts are answered a `README.md` will be generated and saved to the `./generated-readme` folder.
 
-### Other notes
+### Other Notes
 
 If you need to change the save path or name of file you may do so in the `index.js` file.
 
@@ -69,7 +69,9 @@ If you need to change the save path or name of file you may do so in the `index.
 
 ## Images
 
-![Prompts](./assets/images/)
+![License](./assets/images/README-generator-license.png)
+
+![Text Editor](./assets/images/README-generator-textEditor.png)
 
 ## License
 
