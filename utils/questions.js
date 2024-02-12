@@ -1,10 +1,8 @@
-// Array of questions for user input
 export const questions = [
   {
     type: "confirm",
     name: "includeTitle",
     message: "include Title?",
-    default: true
   },
   {
     type: "input",
@@ -21,7 +19,6 @@ export const questions = [
     type: "confirm",
     name: "includeLicense",
     message: "include license?",
-    default: true
   },
   {
     type: 'list',
@@ -36,7 +33,6 @@ export const questions = [
     type: "confirm",
     name: "includeDescription",
     message: "include description?",
-    default: true
   },
   {
     type: "editor",
@@ -53,7 +49,6 @@ export const questions = [
     type: "confirm",
     name: "includeInstallation",
     message: "include installation guidelines?",
-    default: true
   },
   {
     type: 'editor',
@@ -70,7 +65,6 @@ export const questions = [
     type: "confirm",
     name: "includeUsage",
     message: "include usage guidelines?",
-    default: true
   },
   {
     type: 'editor',
@@ -87,7 +81,6 @@ export const questions = [
     type: "confirm",
     name: "includeContribution",
     message: "include contribution guidelines?",
-    default: true
   },
   {
     type: 'editor',
@@ -104,7 +97,6 @@ export const questions = [
     type: "confirm",
     name: "includeTest",
     message: "include test guidelines?",
-    default: true
   },
   {
     type: 'editor',
@@ -121,7 +113,6 @@ export const questions = [
     type: "confirm",
     name: "includeGithub",
     message: "include GitHub username?",
-    default: true
   },
   {
     type: 'input',
@@ -139,7 +130,6 @@ export const questions = [
     type: "confirm",
     name: "includeEmail",
     message: "include E-Mail?",
-    default: true
   },
   {
     type: 'input',
