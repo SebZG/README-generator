@@ -13,6 +13,9 @@ export const questions = [
     when(answers) {
       return answers.includeTitle === true;
     },
+    validate(input) {
+      return input.trim() !== '' ? true : 'Please enter a title for your project';
+    }
   },
   {
     type: "confirm",
@@ -42,6 +45,9 @@ export const questions = [
     when(answers) {
       return answers.includeDescription === true;
     },
+    validate(input) {
+      return input.trim() !== '' ? true : 'Please enter a description for your project';
+    }
   },
   {
     type: "confirm",
@@ -56,6 +62,9 @@ export const questions = [
     when(answers) {
       return answers.includeInstallation === true;
     },
+    validate(input) {
+      return input.trim() !== '' ? true : 'Please enter an installation guide for your project';
+    }
   },
   {
     type: "confirm",
@@ -70,6 +79,9 @@ export const questions = [
     when(answers) {
       return answers.includeUsage === true;
     },
+    validate(input) {
+      return input.trim() !== '' ? true : 'Please enter a usage guide for your project';
+    }
   },
   {
     type: "confirm",
@@ -84,6 +96,9 @@ export const questions = [
     when(answers) {
       return answers.includeContribution === true;
     },
+    validate(input) {
+      return input.trim() !== '' ? true : 'Please enter a contribution guide for your project';
+    }
   },
   {
     type: "confirm",
@@ -98,6 +113,9 @@ export const questions = [
     when(answers) {
       return answers.includeTest === true;
     },
+    validate(input) {
+      return input.trim() !== '' ? true : 'Please enter a tests guide for your project';
+    }
   },
   {
     type: "confirm",
