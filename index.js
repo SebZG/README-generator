@@ -136,7 +136,7 @@ const questions = [
 
 // Function to write README file
 function writeToFile(fileName, data) {
-  const filePath = path.resolve("./demos", fileName); // Edit file path here
+  const filePath = path.resolve("./generated-readme", fileName); // Edit file path here
 
   fs.writeFile(filePath, data, err => {
     if (err) throw err;
