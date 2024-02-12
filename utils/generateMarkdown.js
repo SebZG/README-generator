@@ -15,30 +15,25 @@ export const generateMarkdown = (data) => {
   const gitHub = github ? `Visit my [GitHub](https://github.com/${github}) profile\n` : "";
   const eMail = email ? `Feel free to [E-Mail](mailto:${email}) me\n` : "";
 
-  const setTableOfContents = () => {
-    return descriptionSection
-      || installationSection
-      || usageSection
-      || licenseSection
-      || contributingSection
-      || testsSection
-      || gitHub
-      || eMail ? '## Table of Contents' : ""
-  }
+  const sections = [
+    { title: "Description", content: descriptionSection },
+    { title: "Installation", content: installationSection },
+    { title: "Usage", content: usageSection },
+    { title: "License", content: licenseSection },
+    { title: "Contributing", content: contributingSection },
+    { title: "Tests", content: testsSection },
+    { title: "Questions", content: questionsSection }
+  ];
+
+  const tableOfContents = sections.filter(section =>
+    section.content).map(section => `- [${section.title}](#${section.title.toLowerCase()})`).join('\n');
 
   return `
 ${titleSection}
 ${licenseBadge}
 ${descriptionSection}
 
-${setTableOfContents()}
-${descriptionSection ? '- [Description](#description)\n' : ''}
-${installationSection ? '- [Installation](#installation)\n' : ''}
-${usageSection ? '- [Usage](#usage)\n' : ''}
-${licenseSection ? '- [License](#license)\n' : ''}
-${contributingSection ? '- [Contributing](#contributing)\n' : ''}
-${testsSection ? '- [Tests](#tests)\n' : ''}
-${gitHub || eMail ? '- [Questions](#questions)\n' : ''}
+${tableOfContents ? '## Table of Contents\n' + tableOfContents + '\n' : ''}
 
 ${installationSection}
 ${usageSection}
