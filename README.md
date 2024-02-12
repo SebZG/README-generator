@@ -16,6 +16,7 @@ A command-line application that allows you to quickly create a professional `REA
   - [Usage](#usage)
     - [Steps](#steps-1)
     - [Other notes](#other-notes)
+  - [Technologies/Languages](#technologieslanguages)
   - [Images](#images)
   - [License](#license)
   - [Contributing](#contributing)
@@ -60,6 +61,11 @@ For best experience, use external terminal from IDE
 ### Other notes
 
 If you need to change the save path or name of file you may do so in the `index.js` file.
+
+## Technologies/Languages
+
+- JavaScript
+- [Inquirer](https://www.npmjs.com/package//inquirer)
 
 ## Images
 
