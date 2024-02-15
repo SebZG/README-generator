@@ -13,6 +13,7 @@ A command-line application that allows you to quickly create a professional `REA
   - [Usage](#usage)
     - [Steps](#steps-1)
   - [Technologies/Languages](#technologieslanguages)
+  - [Demo Video](#demo-video)
   - [Images](#images)
   - [License](#license)
   - [Contributing](#contributing)
