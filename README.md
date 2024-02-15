@@ -61,6 +61,12 @@ For best experience, use external terminal from IDE
 - NPM
 - [Inquirer](https://www.npmjs.com/package//inquirer)
 
+## Demo Video
+
+
+https://github.com/SebZG/README-generator/assets/91211862/4385490e-47cc-4f3a-87e7-ff04b229c395
+
+
 ## Images
 
 ![License](./assets/images/README-generator-license.png)
