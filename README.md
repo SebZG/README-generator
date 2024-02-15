@@ -64,6 +64,7 @@ For best experience, use external terminal from IDE
 
 ## Demo Video
 
+Wacth full res video [here](https://www.capcut.com/s/CS2XbbvpRKrY8fcT/)
 
 https://github.com/SebZG/README-generator/assets/91211862/4385490e-47cc-4f3a-87e7-ff04b229c395
 
