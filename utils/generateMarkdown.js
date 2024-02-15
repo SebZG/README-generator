@@ -32,7 +32,7 @@ export const generateMarkdown = (data) => {
     `${titleSection}
 ${licenseBadge}\n
 ${descriptionSection}
-${tableOfContents ? `## Table of Contents\n\n${tableOfContents}\n` : ''}
+${tableOfContents ? `${tableOfContents}\n` : ''}
 ${installationSection}
 ${usageSection}
 ${licenseSection}

@@ -6,11 +6,8 @@
 
 A command-line application that allows you to quickly create a professional `README.md` for a new project.
 
-## Table of Contents
-
 - [README Generator](#readme-generator)
   - [Description](#description)
-  - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
     - [Steps](#steps)
   - [Usage](#usage)
@@ -60,6 +57,8 @@ For best experience, use external terminal from IDE
 ## Technologies/Languages
 
 - JavaScript
+- [Node.js](https://nodejs.org/)
+- NPM
 - [Inquirer](https://www.npmjs.com/package//inquirer)
 
 ## Images

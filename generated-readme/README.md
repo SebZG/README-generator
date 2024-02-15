@@ -4,31 +4,32 @@
 
 ## Description
 
-This is a description.
+This is a description
 
-## Table of Contents
-
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
+- [Demo Project](#demo-project)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
 ## Installation
 
-Some installation instructions and steps.
+These are some installation guidelines
 
 - Step 1
   - some instructions
 - Step 2
   - some more instructions
-  - some notes
+    - some nested points
 
 ## Usage
 
 Some usage guidelines.
+
+Some more points.
 
 ## License
 
@@ -36,7 +37,7 @@ This application is covered under the GNU GPL v3 License.
 
 ## Contributing
 
-For constributions contact me at [GitHub](https://github.com/SebZG)
+For contributions message me at [GitHub](https://github.com/SebZG)
 
 ## Tests
 
@@ -46,5 +47,5 @@ Some testing instructions.
 
 Visit my [GitHub](https://github.com/SebZG) profile
 
-Feel free to [E-Mail](mailto:sebastian.zapata.g@gmail.com) me
+Feel free to [E-Mail](mailto:sebastian@seb.com) me
 
