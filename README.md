@@ -23,7 +23,7 @@ A command-line application that allows you to quickly create a professional `REA
 
 To install/use `README Generator` and it's dependecies, you will first need to have [Node.JS](https://nodejs.org/) installed on your machine.
 
-Once you hav you have Node.js installed continue with the following steps:
+Once you have Node.js installed continue with the following steps:
 
 ### Steps
 
